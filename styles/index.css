@@ -38,7 +38,6 @@ a {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 address {
@@ -155,13 +154,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 50%;
   width: 110px;
   height: 110px;
 }
 .sub-circle {
-  border: 1px solid #4985FF;
+  border: 1px solid #4985ff;
   border-radius: 50%;
   width: 90px;
   height: 90px;
@@ -193,4 +192,59 @@ header {
   flex-basis: calc((100% - 2 * 27px) / 3);
   text-align: start;
   gap: 17px;
+}
+
+.advantages {
+  padding: 100px 0;
+  background-color: #f6f6f8;
+}
+
+.advantages-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-box {
+  max-width: 478px;
+  text-align: left;
+}
+
+.advantages-title {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.advantages-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+
+.advantages-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #4985ff;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.advantages-list-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+
+.advantages-number {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  color: #000000;
 }
