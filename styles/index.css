@@ -212,6 +212,27 @@ header {
   gap: 17px;
 }
 
+.work-link:hover .circle,
+.work-link:focus .circle {
+  border-color: green;
+}
+
+.work-link:hover .sub-circle,
+.work-link:focus .sub-circle {
+  border-color: yellow;
+}
+
+.work-link:hover .work-icon,
+.work-link:focus .work-icon {
+  fill: red;
+}
+
+.sub-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .advantages {
   padding: 100px 0;
   background-color: #f6f6f8;
