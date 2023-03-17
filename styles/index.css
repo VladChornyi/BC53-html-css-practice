@@ -287,3 +287,16 @@ header {
   line-height: 53px;
   color: #000000;
 }
+
+.footer-nav {
+  display: flex;
+  gap: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+}
+
+.footer-nav-item {
+ flex-basis: calc((100% - 3 * 30px) / 4);
+}
