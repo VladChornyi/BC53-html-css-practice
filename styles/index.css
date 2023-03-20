@@ -1,4 +1,6 @@
 body {
+
+  
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -83,8 +85,11 @@ address {
 
 /*header*/
 
-header {
-  background-color: black;
+.header {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100vw;
+
 }
 
 .header-link {
