@@ -212,6 +212,27 @@ header {
   gap: 17px;
 }
 
+.work-link:hover .circle,
+.work-link:focus .circle {
+  border-color: green;
+}
+
+.work-link:hover .sub-circle,
+.work-link:focus .sub-circle {
+  border-color: yellow;
+}
+
+.work-link:hover .work-icon,
+.work-link:focus .work-icon {
+  fill: red;
+}
+
+.sub-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .advantages {
   padding: 100px 0;
   background-color: #f6f6f8;
@@ -265,4 +286,17 @@ header {
   font-size: 36px;
   line-height: 53px;
   color: #000000;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+}
+
+.footer-nav-item {
+ flex-basis: calc((100% - 3 * 30px) / 4);
 }
