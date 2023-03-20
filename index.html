@@ -117,7 +117,9 @@
               </div>
             </li>
           </ul>
-          <a class="main-link" href="">Всі послуги</a>
+          <button class="main-link" type="button" data-modal-open>
+            open modal
+          </button>
         </div>
       </section>
       <section class="advantages">
@@ -234,9 +236,14 @@
           <h3>Контактная информация</h3>
           <address>
             <ul>
-              <li ><a href="mailto: test@test.ua "> <svg width="15" height="15">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg> test@test.ua</a></li>
+              <li>
+                <a href="mailto: test@test.ua ">
+                  <svg width="15" height="15">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  test@test.ua</a
+                >
+              </li>
               <li><a href="tel:+380965556699"></a>+3 8096 555 66 99</li>
               <li>
                 <a
@@ -279,5 +286,13 @@
       </ul>
       <p>(с) 2019. Всі права захищені</p>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h1>modalka</h1>
+        <button type="button" data-modal-close>close</button>
+      </div>
+    </div>
+    <script src="./js/model.js"></script>
   </body>
 </html>

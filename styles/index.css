@@ -1,6 +1,4 @@
 body {
-
-  
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -78,6 +76,11 @@ address {
   padding: 0 15px;
 }
 
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
 .section-title {
   text-align: center;
   color: var(--title-color);
@@ -89,7 +92,6 @@ address {
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 100vw;
-
 }
 
 .header-link {
@@ -303,5 +305,24 @@ address {
 }
 
 .footer-nav-item {
- flex-basis: calc((100% - 3 * 30px) / 4);
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal {
+  max-width: 100%;
+  width: 500px;
+  min-height: 600px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
