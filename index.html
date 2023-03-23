@@ -332,10 +332,65 @@
       <p>(с) 2019. Всі права захищені</p>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <h1>modalka</h1>
         <button type="button" data-modal-close>close</button>
+        <form class="form-modal">
+          <input
+            type="text"
+            class="input-fullwidth"
+            placeholder="Іван Шевченко"
+            title="Іван Шевченко"
+            required
+          />
+          <input
+            type="mail"
+            class="input-fullwidth"
+            placeholder="mail@mail.ua"
+            title="mail@mail.ua"
+            required
+          />
+          <input
+            type="tel"
+            class="input-fullwidth"
+            placeholder="xxx-xxx-xx-xx"
+            title="xxx-xxx-xx-xx"
+            required
+          />
+          <span class="wrapper-radio-gender">
+            <label for="gender"
+              >male <input type="radio" class="input-radio" name="gender" />
+            </label>
+
+            <label
+              >female
+              <input type="radio" class="input-radio" name="gender" />
+            </label>
+          </span>
+          <input type="number" class="input-fullwidth" />
+          <select class="input-fullwidth" name="hobby" id="hobby">
+            <option value="">Плавання</option>
+            <option value="">Теніс</option>
+            <option value="">Футбол</option>
+            <option value="">Рибалка</option>
+            <option value="">Gaming</option>
+            <option value="">HTML-CSS</option>
+          </select>
+          <textarea name="" id="" class="textarea"></textarea>
+        
+          <label class="checkbox">
+            <input class="checkbox-input is-hidden" type="checkbox">
+            <span class="checkbox-custom">
+              <svg class="icon-checkbox" width="15" height="15">
+                <use href="../images/sprite.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <span class="checkbox-text">I accept the terms and conditions of the <a href="">Privacy Policy</a></span>
+          </label>
+
+        
+        </form>
       </div>
     </div>
     <script src="./js/model.js"></script>
