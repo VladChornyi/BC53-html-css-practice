@@ -21,7 +21,10 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav>
+        <button class="burger-menu-btn js-open-menu" aria-expanded="false">
+          Menu
+        </button>
+        <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#" class="header-link">Головна</a>
@@ -42,7 +45,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Передова IT студія</h1>
           <p class="hero-text">
@@ -50,8 +53,8 @@
           </p>
           <a class="main-link" href="#">Наші проекти</a>
         </div>
-      </section>
-      <section class="about-us">
+      </section> -->
+      <!-- <section class="about-us">
         <div class="container about-us-container">
           <h2 class="section-title about-us-title">
             Ми створюємо мобільні додатки для великих корпорацій
@@ -121,8 +124,8 @@
             open modal
           </button>
         </div>
-      </section>
-      <section class="advantages">
+      </section> -->
+      <!-- <section class="advantages">
         <div class="container">
           <div class="advantages-wrapper">
             <div class="advantages-box">
@@ -166,9 +169,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="our-works">
+      <!-- <section class="our-works">
         <div class="container">
           <h2>Наші роботи на яких ми спеціалізуємось</h2>
           <button type="button">Всі послуги</button>
@@ -250,9 +253,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section>
+      <!-- <section>
         <h2>Наші проекти</h2>
         <p>
           Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
@@ -266,16 +269,16 @@
           <li><img src="./images/code.jpg" alt="код" /></li>
         </ul>
         <a href="">Всі проекти</a>
-      </section>
+      </section> -->
 
-      <section>
+      <!-- <section>
         <h2>Відео про нашу роботу</h2>
         <p>Просто подивіться, як ми працюємо</p>
         <video src="./video" width="970"></video>
         <button type="button">Дивитись відео</button>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- <footer>
       <ul class="footer-nav">
         <li class="footer-nav-item">
           <h3>Контактная информация</h3>
@@ -330,9 +333,9 @@
         </li>
       </ul>
       <p>(с) 2019. Всі права захищені</p>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop" data-modal>
+    <!-- <div class="backdrop" data-modal>
       <div class="modal">
         <h1>modalka</h1>
         <button type="button" data-modal-close>close</button>
@@ -378,21 +381,51 @@
             <option value="">HTML-CSS</option>
           </select>
           <textarea name="" id="" class="textarea"></textarea>
-        
+
           <label class="checkbox">
-            <input class="checkbox-input is-hidden" type="checkbox">
+            <input class="checkbox-input is-hidden" type="checkbox" />
             <span class="checkbox-custom">
               <svg class="icon-checkbox" width="15" height="15">
                 <use href="../images/sprite.svg#icon-checkbox"></use>
               </svg>
             </span>
-            <span class="checkbox-text">I accept the terms and conditions of the <a href="">Privacy Policy</a></span>
+            <span class="checkbox-text"
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></span
+            >
           </label>
-
-        
         </form>
       </div>
+    </div> -->
+    <div class="mobile-menu js-menu-container">
+      <div>
+        <button class="mobile-menu-btn-close js-close-menu">close menu</button>
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a href="#" class="header-link">Головна</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="header-link">Наші проекти</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="header-link">Послуги</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="header-link">Новини</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="header-link">Контакти</a>
+          </li>
+        </ul>
+      </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/model.js"></script>
   </body>
 </html>
